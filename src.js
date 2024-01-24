@@ -6,6 +6,7 @@ let state = {
   ibo: null,
   tbo1: null,
   tbo2: null,
+  tbo3: null,
   iboLength: null,
   tex: null,
   fx: null,
