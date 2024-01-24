@@ -176,6 +176,19 @@ function setupScene() {
   img2.src = './buildings.png';
   state.tbo2 = tbo2;
 
+  var tbo3 = gl.createTexture();
+  var img3 = new Image();
+  img3.crossOrigin = "anonymous";
+  img3.onload = function () {
+    gl.bindTexture(gl.TEXTURE_2D, tbo3);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, img2);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.bindTexture(gl.TEXTURE_2D, null);
+  }
+  img3.src = './OriginalUndist.png';
+  state.tbo3 = tbo3;
+
   state.tex = 0;
 
   gl.enable(gl.DEPTH_TEST);
