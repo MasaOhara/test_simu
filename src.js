@@ -238,8 +238,8 @@ function drawScene(time) {
 
 function main() {
   canvas = document.getElementById('gl-canvas');
-  canvas.width = 3243;
-  canvas.height = 1219;
+  canvas.width = 4096;
+  canvas.height = 4096;
 
   gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
 
