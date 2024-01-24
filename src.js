@@ -187,7 +187,7 @@ function setupScene() {
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
     gl.bindTexture(gl.TEXTURE_2D, null);
   }
-  img3.src = './OriginalUndist.png';
+  img3.src = './grid.png';
   state.tbo3 = tbo3;
 
   state.tex = 0;
