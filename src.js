@@ -174,7 +174,7 @@ function setupScene() {
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
     gl.bindTexture(gl.TEXTURE_2D, null);
   }
-  img2.src = './buildings.png';
+  img2.src = './UndistSqareBlender.png';
   state.tbo2 = tbo2;
 
   var tbo3 = gl.createTexture();
