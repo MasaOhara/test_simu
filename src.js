@@ -334,10 +334,10 @@ function main() {
 
   const reset = document.getElementById('reset');
   reset.onclick = function () {
-    fx.value = 480; fx.oninput.call();
-    fy.value = 480; fy.oninput.call();
-    cx.value = 240; cx.oninput.call();
-    cy.value = 180; cy.oninput.call();
+    fx.value = 2094; fx.oninput.call();
+    fy.value = 2091; fy.oninput.call();
+    cx.value = 1918; cx.oninput.call();
+    cy.value = 1140; cy.oninput.call();
     k1.value = 0; k1.oninput.call();
     k2.value = 0; k2.oninput.call();
     k3.value = 0; k3.oninput.call();
