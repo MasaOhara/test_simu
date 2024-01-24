@@ -181,7 +181,7 @@ function setupScene() {
   img3.crossOrigin = "anonymous";
   img3.onload = function () {
     gl.bindTexture(gl.TEXTURE_2D, tbo3);
-    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, img2);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, img3);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
     gl.bindTexture(gl.TEXTURE_2D, null);
@@ -205,6 +205,8 @@ function drawScene(time) {
   gl.bindTexture(gl.TEXTURE_2D, state.tbo1);
   gl.activeTexture(gl.TEXTURE1);
   gl.bindTexture(gl.TEXTURE_2D, state.tbo2);
+  gl.activeTexture(gl.TEXTURE2);
+  gl.bindTexture(gl.TEXTURE_2D, state.tbo3);
   gl.uniform1i(gl.getUniformLocation(state.pro1, 'tex1'), state.tex);
 
   gl.uniform1f(gl.getUniformLocation(state.pro1, 'w'), canvas.width);
